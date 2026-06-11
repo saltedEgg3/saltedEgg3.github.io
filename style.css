@@ -413,10 +413,22 @@ section h2{
    SKILLS
 ========================= */
 
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap:20px;
+.skills-grid div{
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    text-align:center;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    transition:.3s;
+
+    font-weight:600;
 }
 
 .skills-grid div{
@@ -678,5 +690,144 @@ html{
 
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-card{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.contact-item{
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.contact-item:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(108,99,255,.25);
+}
+
+.contact-item i{
+    font-size:2.5rem;
+    color:#8b5cf6;
+    margin-bottom:15px;
+}
+
+.contact-item h3{
+    margin-bottom:10px;
+}
+
+.contact-item p{
+    color:#d1d5db;
+}
+
+@media(max-width:992px){
+
+    .contact-card{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card{
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    margin-top:30px;
+}
+
+.education-content h3{
+    color:#8b5cf6;
+    margin-bottom:10px;
+}
+
+.education-year{
+    color:#c4b5fd;
+    margin-bottom:15px;
+}
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:30px;
+}
+
+.cert-card{
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:.3s;
+}
+
+.cert-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(108,99,255,.25);
+}
+
+.cert-card h3{
+    color:#8b5cf6;
+    margin-bottom:10px;
+}
+
+@media(max-width:992px){
+
+    .project-container{
+        grid-template-columns:1fr;
+    }
+
+    .cert-grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact-card{
+        grid-template-columns:1fr;
+    }
+
 }
 
