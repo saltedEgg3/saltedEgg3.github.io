@@ -142,65 +142,32 @@ nav a:hover::after{
 
 .hero{
     min-height:100vh;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
-    padding:120px 10%;
+    padding:120px 8%;
 }
 
 .glass-card{
-
     width:100%;
+    max-width:1400px;
 
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
     gap:60px;
 
-    padding:60px;
+    padding:50px;
 
     background:rgba(255,255,255,0.05);
 
-    -webkit-backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,0.1);
 
     backdrop-filter:blur(20px);
-
-    border:1px solid rgba(255,255,255,0.1);
 
     border-radius:30px;
 
     box-shadow:
-        0 8px 32px rgba(0,0,0,.4);
-}
-
-.hero-text h1{
-    font-size:4rem;
-}
-
-.hero-text span{
-    color:#6c63ff;
-}
-
-.hero-text h2{
-    margin:20px 0;
-    color:#c4b5fd;
-}
-
-.hero-text p{
-    max-width:550px;
-    line-height:1.8;
-    color:#d1d5db;
-}
-
-.buttons{
-    margin-top:30px;
+    0 0 40px rgba(108,99,255,0.15);
 }
 
 /* =========================
@@ -254,8 +221,14 @@ nav a:hover::after{
    PROFILE IMAGE
 ========================= */
 
-.hero-image img{
+.hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
 
+.hero-image img{
     width:350px;
     height:350px;
 
@@ -263,17 +236,10 @@ nav a:hover::after{
 
     border-radius:50%;
 
-    border:3px solid #6c63ff;
+    border:5px solid rgba(108,99,255,0.4);
 
     box-shadow:
-        0 0 20px rgba(108,99,255,.7),
-        0 0 60px rgba(108,99,255,.4);
-
-    transition:.4s;
-}
-
-.hero-image img:hover{
-    transform:scale(1.05);
+    0 0 40px rgba(108,99,255,0.5);
 }
 
 /* =========================
@@ -302,8 +268,7 @@ section h2{
 .card{
     background:rgba(255,255,255,0.05);
 
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    backdrop-filter:blur(20px);
 
     border:1px solid rgba(255,255,255,0.1);
 
@@ -311,14 +276,14 @@ section h2{
 
     overflow:hidden;
 
-    transition:.4s;
+    transition:0.4s;
 }
 
 .card:hover{
     transform:translateY(-10px);
 
     box-shadow:
-        0 15px 40px rgba(108,99,255,.3);
+    0 0 30px rgba(108,99,255,0.25);
 }
 
 .card img{
@@ -420,8 +385,15 @@ footer{
     }
 
     .hero-text h1{
-        font-size:2.5rem;
-    }
+    font-size:5rem;
+    line-height:1.1;
+}
+
+    .hero-text p{
+    font-size:1.15rem;
+    line-height:1.9;
+    color:#d1d5db;
+}
 
     .hero-image img{
         width:250px;
@@ -469,6 +441,32 @@ html{
 .hero-socials a:hover{
     color:#8b5cf6;
     transform:translateY(-5px);
+}
+
+.hero-stats{
+    display:flex;
+    gap:15px;
+    margin-top:30px;
+}
+
+.stat-card{
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    padding:15px 20px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    min-width:100px;
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.stat-card h3{
+    color:#6c63ff;
 }
 
 /* Hero Stats */

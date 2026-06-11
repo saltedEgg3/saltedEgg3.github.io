@@ -16,10 +16,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 const texts = [
-    "Software Developer",
-    "Unity Developer",
+    "Aspiring Network Engineer",
     "Computer Engineering Student",
-    "Blockchain Enthusiast"
+    "IT Infrastructure Enthusiast",
+    "System Administration Learner"
 ];
 
 let count = 0;
