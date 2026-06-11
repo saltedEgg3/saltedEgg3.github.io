@@ -226,6 +226,39 @@ nav a:hover::after{
     }
 }
 
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:120px 8%;
+}
+
+.glass-card{
+    width:100%;
+    max-width:1600px;
+
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:60px;
+
+    background:rgba(255,255,255,0.05);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:30px;
+
+    box-shadow:
+        0 0 40px rgba(108,99,255,0.15);
+}
+
 /* =========================
    BUTTONS
 ========================= */
@@ -452,9 +485,9 @@ footer{
 @media(max-width:768px){
 
     .glass-card{
-        flex-direction:column;
-        text-align:center;
-    }
+    grid-template-columns:1fr;
+    text-align:center;
+}
 
 
     .hero-text h1{
@@ -647,23 +680,3 @@ html{
     -webkit-text-fill-color:transparent;
 }
 
-.glass-card{
-    align-items:center;
-}
-
-.hero-text{
-    align-self:center;
-}
-
-.hero-image{
-    margin-top:0 !important;
-}
-
-.hero{
-    padding-top:100px;
-}
-
-.hero-image img{
-    width:420px;
-    height:420px;
-}
