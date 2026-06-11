@@ -171,10 +171,9 @@ nav a:hover::after{
 ========================= */
 
 .hero-text h1{
-    font-size:4rem;
-    line-height:1.15;
-    margin-bottom:10px;
-    color:white;
+    font-size:3.5rem;
+    line-height:1.2;
+    margin-bottom:15px;
 }
 
 .hero-text h1 span{
@@ -283,6 +282,7 @@ nav a:hover::after{
     justify-content:center;
     align-items:center;
     flex-direction:column;
+    align-self:center;
 }
 
 .hero-image img{
@@ -645,4 +645,25 @@ html{
 
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
+}
+
+.glass-card{
+    align-items:center;
+}
+
+.hero-text{
+    align-self:center;
+}
+
+.hero-image{
+    margin-top:0 !important;
+}
+
+.hero{
+    padding-top:100px;
+}
+
+.hero-image img{
+    width:420px;
+    height:420px;
 }
