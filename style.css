@@ -6,15 +6,17 @@
 }
 
 body{
-    background:linear-gradient(
+    background:
+    radial-gradient(circle at 10% 20%, rgba(108,99,255,.25), transparent 35%),
+    radial-gradient(circle at 90% 80%, rgba(0,212,255,.20), transparent 35%),
+    linear-gradient(
         135deg,
         #050816,
-        #0f172a,
-        #1e1b4b
+        #0b1120,
+        #111827
     );
 
     color:white;
-
     overflow-x:hidden;
 }
 
