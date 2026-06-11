@@ -178,6 +178,10 @@ nav a:hover::after{
     padding:120px 8%;
 }
 
+.hero-text h1 span{
+    color:#8b5cf6;
+}
+
 .glass-card{
     width:100%;
     max-width:1400px;
@@ -214,7 +218,7 @@ nav a:hover::after{
 
     border-radius:10px;
 
-    margin-right:10px;
+    margin-right:20px;
 }
 
 .btn{
@@ -436,9 +440,9 @@ footer{
 }
 
     .hero-text p{
-    font-size:1.15rem;
-    line-height:1.9;
-    color:#d1d5db;
+    text-align:justify;
+    max-width:700px;
+    line-height:1.7;
 }
 
     .hero-image img{
@@ -460,6 +464,10 @@ footer{
 /* Typing Animation */
 
 #typing{
+    font-size:4rem;
+    line-height:1.1;
+    margin:15px 0;
+
     transition:all .3s ease;
     color:#c4b5fd;
 }
