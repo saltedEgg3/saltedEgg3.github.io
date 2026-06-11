@@ -779,14 +779,18 @@ html{
 .cert-card img{
     width:100%;
     height:180px;
-    object-fit:cover;
+    object-fit:contain;
+
+    background:white;
+    padding:10px;
+
     border-radius:12px;
+
+    transition:0.3s;
 }
 
-.cert-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-    gap:30px;
+.cert-card:hover img{
+    transform:scale(1.03);
 }
 
 .cert-card{
