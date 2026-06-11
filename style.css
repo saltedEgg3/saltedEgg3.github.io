@@ -281,10 +281,11 @@ section{
 }
 
 section h2{
-    margin-bottom:30px;
+    margin-bottom:15px;
     color:#6c63ff;
+    font-size:3rem;
+    font-weight:700;
 }
-
 /* =========================
    PROJECTS
 ========================= */
@@ -314,10 +315,10 @@ section h2{
 }
 
 .card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-12px) scale(1.02);
 
     box-shadow:
-    0 0 30px rgba(108,99,255,0.25);
+        0 15px 40px rgba(108,99,255,.25);
 }
 
 .card img{
