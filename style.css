@@ -52,27 +52,25 @@ body{
 .about-card{
     background: rgba(255,255,255,0.08);
     backdrop-filter: blur(20px);
-
     border: 1px solid rgba(255,255,255,0.15);
 
     border-radius: 25px;
 
-    padding: 50px;
+    padding: 30px 40px;
 
-    margin-top: 25px;
+    margin-top: 15px;
 
     color: #d1d5db;
 
-    box-shadow:
-    0 0 40px rgba(108,99,255,0.2);
+    box-shadow: 0 0 40px rgba(108,99,255,0.2);
 
-    line-height: 1.9;
+    line-height: 1.7;
 
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 .about-card p{
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
 .about-card p:last-child{
@@ -337,11 +335,11 @@ nav a:hover::after{
 ========================= */
 
 section{
-    padding:100px 10%;
+    padding:70px 10%;
 }
 
 section h2{
-    margin-bottom:15px;
+    margin-bottom:10px;
     color:#6c63ff;
     font-size:3rem;
     font-weight:700;
