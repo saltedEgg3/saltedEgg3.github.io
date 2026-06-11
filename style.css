@@ -778,15 +778,19 @@ html{
 
 .cert-card img{
     width:100%;
-    height:220px;
+    height:180px;
     object-fit:cover;
     border-radius:12px;
-    margin-bottom:15px;
 }
 
-.cert-card p{
-    color:#d1d5db;
-    margin-bottom:15px;
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+}
+
+.cert-card{
+    overflow:hidden;
 }
 
 .cert-card a{
