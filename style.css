@@ -776,38 +776,52 @@ html{
    CERTIFICATIONS
 ========================= */
 
-.cert-card img{
-    width:100%;
-    height:220px;
-
-    object-fit:cover;
-    object-position:top;
-
-    border-radius:12px;
-
-    transition:0.3s;
-}
-
-.cert-card:hover img{
-    transform:scale(1.03);
-}
-
 .cert-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns:repeat(2,1fr);
     gap:30px;
+    margin-top:30px;
 }
 
 .cert-card{
     background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(20px);
+
     border:1px solid rgba(255,255,255,0.1);
     border-radius:20px;
-    overflow:hidden;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
 }
 
-.cert-card img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    object-position:center;
+.cert-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 15px 40px rgba(108,99,255,.25);
+}
+
+.cert-card i:first-child{
+    font-size:3rem;
+    color:#8b5cf6;
+
+    margin-bottom:20px;
+}
+
+.cert-card h3{
+    margin-bottom:10px;
+}
+
+.cert-card p{
+    color:#d1d5db;
+    margin-bottom:15px;
+}
+
+.cert-card a{
+    color:#8b5cf6;
+    text-decoration:none;
+    font-weight:600;
 }
