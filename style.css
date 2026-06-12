@@ -799,7 +799,7 @@ CERTIFICATION BADGE
 
     transition:.3s;
 
-    min-height:300px;
+    min-height:auto;
 }
 
 .cert-card:hover{
@@ -810,17 +810,14 @@ CERTIFICATION BADGE
 }
 
 .cert-badge{
-    width:60px;
-    height:60px;
-
-    margin-bottom:20px;
-
     display:flex;
     justify-content:center;
     align-items:center;
 
-    font-size:1.5rem;
-    color:white;
+    font-size:3rem;
+    color:#8b5cf6;
+
+    margin-bottom:25px;
 }
 
 .cert-card h3{
@@ -838,9 +835,18 @@ CERTIFICATION BADGE
     align-items:center;
     gap:10px;
 
-    width:auto;
-    padding:12px 20px;
-    margin-top:20px;
+    margin-top:25px;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    background:rgba(108,99,255,0.15);
+    border:1px solid rgba(108,99,255,0.3);
+
+    color:#8b5cf6;
+    text-decoration:none;
+    font-weight:600;
 }
 
 .cert-card a:hover{
