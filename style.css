@@ -847,6 +847,8 @@ html{
     text-align:center;
 
     transition:.3s;
+
+    min-height:300px;
 }
 
 .cert-card:hover{
@@ -893,6 +895,8 @@ html{
 .cert-card a:hover{
     background:#6c63ff;
     color:white;
+
+    margin:20px auto 0;
 }
 
 .cert-date{
