@@ -745,14 +745,12 @@ html{
 }
 
 /* =========================
-   EDUCATION
+EDUCATION
 ========================= */
 
 .education-card{
     background:rgba(255,255,255,0.05);
-
     backdrop-filter:blur(20px);
-
     border:1px solid rgba(255,255,255,0.1);
 
     border-radius:25px;
@@ -762,14 +760,48 @@ html{
     margin-top:30px;
 }
 
-.education-content h3{
+.education-item{
+    padding:25px 0;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.education-item:last-child{
+    border-bottom:none;
+}
+
+.education-item h3{
     color:#8b5cf6;
     margin-bottom:10px;
+    font-size:1.3rem;
 }
 
 .education-year{
     color:#c4b5fd;
-    margin-bottom:15px;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.education-item p{
+    color:#d1d5db;
+    line-height:1.7;
+}
+
+.education-strand{
+    display:inline-block;
+
+    margin-top:10px;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    background:rgba(108,99,255,0.15);
+    border:1px solid rgba(108,99,255,0.3);
+
+    color:#8b5cf6;
+
+    font-size:0.85rem;
+    font-weight:600;
 }
 
 /* =========================
