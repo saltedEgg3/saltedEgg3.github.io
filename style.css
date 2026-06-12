@@ -796,7 +796,7 @@ html{
 
     transition:.3s;
 
-    min-height:300px;
+    min-height:280px;
 
     display:flex;
     flex-direction:column;
