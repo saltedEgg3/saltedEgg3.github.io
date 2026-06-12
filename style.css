@@ -795,7 +795,7 @@ html{
 
     transition:.3s;
 
-    min-height:280px;
+    min-height:auto;
 
     display:flex;
     flex-direction:column;
@@ -857,18 +857,9 @@ html{
 }
 
 .cert-badge{
-    width:60px;
-    height:60px;
-
-    margin:0 auto 20px;
-
-    border-radius:50%;
-
-    background:linear-gradient(
-        135deg,
-        #6c63ff,
-        #8b5cf6
-    );
+    width:50px;
+    height:50px;
+}
 
     display:flex;
     justify-content:center;
@@ -889,21 +880,13 @@ html{
 }
 
 .cert-card a{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
 
-    background:rgba(108,99,255,0.15);
+    padding:10px 18px;
 
-    border:1px solid rgba(108,99,255,0.3);
-
-    padding:10px 20px;
-
-    border-radius:12px;
-
-    color:#8b5cf6;
-
-    text-decoration:none;
-
-    font-weight:600;
+    width:auto;
 }
 
 .cert-card a:hover{
